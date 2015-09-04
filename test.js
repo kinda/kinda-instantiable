@@ -1,7 +1,7 @@
 'use strict';
 
-let assert = require('chai').assert;
-let KindaInstantiable = require('./src');
+import { assert } from 'chai';
+import KindaInstantiable from './src';
 
 suite('KindaInstantiable', function() {
   test('instantiation', function() {

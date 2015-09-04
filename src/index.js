@@ -1,9 +1,9 @@
 'use strict';
 
-let KindaExtendable = require('kinda-extendable');
-let pkg = require('../package.json');
+import KindaExtendable from 'kinda-extendable';
+import pkg from '../package.json';
 
-let KindaInstantiable = KindaExtendable.extend('KindaInstantiable', pkg.version, function() {
+export default KindaExtendable.extend('KindaInstantiable', pkg.version, function() {
   // class methods
 
   this.instantiate = function() {
@@ -65,5 +65,3 @@ let KindaInstantiable = KindaExtendable.extend('KindaInstantiable', pkg.version,
     }
   };
 });
-
-module.exports = KindaInstantiable;
